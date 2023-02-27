@@ -6,18 +6,19 @@
 </template>
 
 <script lang="ts" setup>
-import { onServerPrefetch } from 'vue'
-import { useCounterStore } from '@/stores/counter'
+import { onServerPrefetch } from "vue";
+import { useCounterStore } from "@/stores/counter";
 
-const counterStore = useCounterStore()
+const counterStore = useCounterStore();
 
+// 模拟服务端 获取异步数据
 onServerPrefetch(async () => {
   await new Promise((resolve) => {
     setTimeout(() => {
-      counterStore.count = 100
+      counterStore.count = 100;
 
-      resolve(true)
-    }, 1000)
-  })
-})
+      resolve(true);
+    }, 300);
+  });
+});
 </script>

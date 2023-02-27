@@ -1,6 +1,6 @@
 # vite4-vue3-ssr
 
-基础的 vite4 + vue3 + ssr +ts 项目模板，包含必要的 vue-router pinia eslint prettier
+基于 Vite4 + Vue3 + VueRouter4 + Pinia + SSR + TS 的服务端渲染模板，包含必要的 eslint prettier.
 
 ### 开发环境
 
