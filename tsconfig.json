@@ -3,11 +3,12 @@
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "baseUrl": ".",
+    "target": "ESNext",
+    "lib": ["DOM","ESNext","ES2017"],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-
   "references": [
     {
       "path": "./tsconfig.config.json"
